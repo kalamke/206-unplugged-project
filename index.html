@@ -23,22 +23,12 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 
   <header>
     <div class="content-wrapper">
-        <a href="#"><img src="img/logo.png" alt="unplugged-logo"></a>
+        <a href="#">
+          <img src="img/logo.png" alt="unplugged-logo">
+        </a>
         <div class="header-divider"></div>
       <nav>
         <ul>
@@ -46,99 +36,173 @@
           <li><a href="about/index.html" target="_blank">About</a></li>
         </ul>
       </nav>
-      <div id="headline">
-        <h1>Retreat from the desk, return refreshed.</h1>
-      </div>
     </div>
   </header>
 
   <main>
+    <section class="hero-area">
+      <div>
+          <h1>Retreat from the desk, return refreshed.</h1>
+      </div>
+    </section>
+
     <aside>
       <div class="content-wrapper">
-        <div class="form-descrip">
+        <div class="form-description">
           <h2>Want to join the next retreat?</h2>
           <p>Find out when we are holding out next retreat and how your company or team can sign up!</p>
         </div>
 
         <div class="form">
-          <form action="">
-            <label for="fname">Find out more</label><br>
+            <h2>Find out more</h2>
             <input type="text" name="name" value="email address">
             <input type="button" value="Download Itinerary">
-          </form> 
         </div>
       </div>
     </aside>
 
-    <section class="amen-container">
-      <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
-      <div class="amen" id="tent">
-        <img src="img/tent.png" alt="tent drawing">
-        <p>Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
-      </div>
+    <section class="features">
+      <div class="content-wrapper">
+        <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
 
-      <div class="amen" id="room"> 
-        <img src="img/bed.png" alt="bed drawing">
-        <p>12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
-      </div>
+        <div class="features-items">
+          <article>
+            <p class="fontawesome-icon">
+              <img src="img/tent.png" alt="tent drawing">
+            </p>
+            <p class="features-item-description">
+              Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.
+            </p>
+          </article>
 
-      <div class="amen" id="food"> <img src="img/utensils.png" alt="fork and knife drawing">
-        <p>Private chef team providing on-demand meals - just like your team kitchen.</p>
-      </div>
+          <article>
+            <p class="fontawesome-icon">
+              <img src="img/bed.png" alt="bed drawing">
+            </p>
+            <p class="features-item-description">
+              12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.
+            </p>
+          </article>
 
-      <div class="amen" id="outdoors"> <img src="img/shoe-prints.png" alt="shoe print drawing">
-        <p>5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.</p>
-      </div>
+          <article> 
+            <p class="fontawesome-icon">
+              <img src="img/utensils.png" alt="fork and knife drawing">
+            </p>
+            <p class="features-item-description">
+              Private chef team providing on-demand meals - just like your team kitchen.
+            </p>
+          </article>
 
-      <div class="amen" id="facil"> <img src="img/smile.png" alt="smile face drawing">
-        <p>Retreat facilitator to manage your day to day activities so you all get a chance to reset.</p>
-      </div>
+          <article> 
+            <p class="fontawesome-icon">
+              <img src="img/shoe-prints.png" alt="shoe print drawing">
+            </p>
+            <p class="features-item-description">
+              5 outdoor obstacle courses, including private beach 1/2 mile from bungalow.
+            </p>
+          </article>
 
-      <div class="amen" id="wifi"> <img src="img/wifi.png" alt="wifi drawing">
-        <p>Dedicated computer room for times that you must wifi.</p>
-      </div>
+          <article> 
+            <p class="fontawesome-icon">
+              <img src="img/smile.png" alt="smile face drawing">
+            </p>
+            <p class="features-item-description">
+              Retreat facilitator to manage your day to day activities so you all get a chance to reset.
+            </p>
+          </article>
 
-    </section>
+          <article>
+            <p class="fontawesome-icon">
+              <img src="img/wifi.png" alt="wifi drawing">
+            </p>
+            <p class="features-item-description">
+              Dedicated computer room for times that you must wifi.
+            </p>
+          </article>
+        </div>    <!-- Features div ends  -->
+      </div>      <!-- Features content-wrapper Ends -->
+   </section>     <!-- Features Section Ends -->
 
-    <section class="former container-wraper">
-      <div>
-        <h2>Be a better team in 5 days, like this one.</h2>
-      </div>
-      <div>
-        <img src="img/photo-group.jpg" alt="Group of people">
-      </div>
-      <div>
-        <h3>LaCrue Bottling Co. <br>
-        October 2017</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate mi sit amet mauris commodo quis. In nisl nisi scelerisque eu ultrices vitae auctor. Vitae aliquet nec ullamcorper sit amet risus. Pharetra sit amet aliquam id diam</p>
+    <section class="reviews">
+      <div class="content-wrapper">
+          <h2>Be a better team in 5 days, like this one.</h2>
+        
+        <article>
+          <div>
+            <img src="img/photo-group.jpg" alt="Group of people">
+          </div>
+          <div>
+            <h3>LaCrue Bottling Co. <br>
+            October 2019</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate mi sit amet mauris commodo quis. In nisl nisi scelerisque eu ultrices vitae auctor. Vitae aliquet nec ullamcorper sit amet risus. Pharetra sit amet aliquam id diam.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
+
   <footer>
     <div class="content-wrapper">
-      <div class="contact">
-        <h3>Contact</h3>
-
-        <address>
-          <a href="mailto:hello@unplugged.com">hello@unplugged.com</a><br>
-          <a href="tel:+15555555555">555-555-5555</a>
+      <div class="footer-content">
+        <address class="contact">
+          <h4>Contact</h4>
+          <a href="tel:+15555555555">555-555-5555</a><br>
+          <a href="mailto:hello@unplugged.com">hello@unplugged.com</a>
         </address>
 
-      </div>
-
       <div class="social">
-        <h3>Social</h3>
-        <ul>
-          <li> <a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook icon"></a></li>
-          <li> <a href="http://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter icon"></a></li>
-          <li> <a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram icon"></a></li>
-        </ul>
-      </div>
-      <div id="copy">
-        <p>Copyright 2020 | Unplugged</p>
-      </div>
-    </div>
+        <h4>Social</h3>
+        <div class="social-icons">
+          <p> 
+            <a href="http://www.facebook.com" target="_blank">
+              <img src="img/facebook.png" alt="Facebook icon">
+            </a>
+          </p>
+          <p>
+            <a href="http://www.twitter.com" target="_blank">
+              <img src="img/twitter.png" alt="Twitter icon">
+            </a>
+          </p>
+          <p>
+            <a href="http://www.instagram.com" target="_blank">
+              <img src="img/instagram.png" alt="Instagram icon">
+            </a>
+          </p>
+        </div>
+      </div>    
+    </div> <!-- footer content ends -->
+  </div> <!--footer content-wrapper ends-->
+  
+  <div class="copyright">
+    <p>Copyright 2020 | Unplugged</p>
+  </div>
+
   </footer>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
 </body>
 
