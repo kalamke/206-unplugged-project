@@ -97,6 +97,142 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ======   FONT STYLES and SIZES   ====== */
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, .form input, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+    /* ============  BASE STYLES FOR LAYOUT ============= */
+    /* FLEX CONTAINER SET-UP HOMEPAGE */
+
+header, header nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+
+/* don't understand why this has to be flex?. something to do with image? */
+.hero-area {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+ aside .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: slateblue;
+}
+
+.features, .features-items, .features-items article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+.reviews .content-wrapper, .reviews-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: lavenderblush;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rosybrown;
+}
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+    /* =====   FLEX CONTAINER SET-UP ABOUT PAGE   ===== */
+
+.mission, .mission .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+}
+
+.about-contact, .about-contact .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+    /* =====   FLEX CONTAINER SET-UP FAQ PAGE   ===== */
+
+.faq, .faq .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photo img {
+  max-width: 90%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
