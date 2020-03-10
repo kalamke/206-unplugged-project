@@ -12,8 +12,8 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
+  /* color: #222;
+  font-size: 1em; */
   line-height: 1.4;
 }
 
@@ -111,6 +111,11 @@ h1, h2, .form input, h3, h4 {
   padding: 0;
 }
 
+h1 {
+  font-size: 2.2rem;
+  font-weight: normal;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: normal;
@@ -140,11 +145,11 @@ header, header nav {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: #202322;
 }
 
 header .content-wrapper {
   width: 100%;
-  background-color: #202322;
 }
 
 header {
@@ -191,15 +196,9 @@ ul li a {
   align-items: center;
   background: url("../img/hero-img.jpg") no-repeat center;
   background-size: cover;
-  padding: 55px 40px 300px 20px;
-  font-size: 1.2rem; 
+  padding: 55px 60px 300px 20px;
 }
 
-
-/* .hero-head {
-  width: 82%;
-  font-size: 1.8rem;
-} */
 
 /* ======   FORM STYLES   ====== */
 
@@ -214,6 +213,11 @@ ul li a {
 
 aside .content-wrapper {
   width: 90%;
+}
+
+aside h2 {
+  padding-bottom: 15px;
+  line-height: 2rem;
 }
 
 .form-description, .form {
@@ -246,7 +250,8 @@ aside .content-wrapper {
 
 /* ======   FEATURES STYLES   ====== */
 
-.features, .features-items, .features-items article {
+
+.features, .features-items  {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -264,7 +269,7 @@ aside .content-wrapper {
 }
 
 .features-items article {
-  width: 57%;
+  width: 55%;
   text-align: center;
   font-size: .9rem;
 }
@@ -282,7 +287,9 @@ article .fontawesome-icon, article .features-item-description {
   height: 55px;
 }
 
+
 /* ======   REVIEWS STYLES   ====== */
+
 
 .reviews {
   display: flex;
@@ -297,7 +304,6 @@ article .fontawesome-icon, article .features-item-description {
 }
 
 .reviews h2 {
-  font-weight: lighter;
   padding-top: 45px;
 }
 
@@ -314,7 +320,9 @@ article .fontawesome-icon, article .features-item-description {
   line-height: 1.2;
 }
 
+
 /* ======   FOOTER/CONTACT STYLES   ====== */
+
 
 footer {
   display: flex;
@@ -355,6 +363,10 @@ footer .social {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+}
+
+.copyright {
+  padding: 15px 0;
 }
 
 
@@ -402,7 +414,9 @@ footer .social {
   padding-bottom: 30px;
 }
 
+
     /* =====   FLEX CONTAINER SET-UP FAQ PAGE   ===== */
+
 
 .faq {
   display: flex;
@@ -513,16 +527,300 @@ footer .social {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles here */
+
+  body, html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  /* ========== HEADER TABLE STYLES   =========== */
+
+  header .content-wrapper {
+    display: flex;
+    width: 83%;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    flex: 0 1 60%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  header nav {
+    display: flex;
+    flex: 1 0 40%;
+    justify-content: flex-end;
+  }
+
+  /* =====   Don't need header-divider for tablet  ===== */
+  .header-divider {   
+    width: 0;
+    border: none;
+  }
+
+
+  /* ==========   HERO AREA - TABLET  ========== */
+
+
+  .hero-area {
+  padding: 80px 0 420px 45px;
+  }
+
+  .hero-area h1 {
+    width: 80%;
+  }
+
+
+  /* ===========   FORM STYLES - TABLET  =========== */
+
+
+  aside .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .form-description, .form {
+    width: 45%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+  }
+  .form-description h2, .form h2 {
+    font-size: 1.7rem;
+  }
+
+
+   /* ===========   FEATURES STYLES FOR TABLET  =========== */
+
+
+   .features, .features-items  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .features .content-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 85%;
+    margin-bottom: 80px;
+  }
+
+  .features-items {
+    width: 83%;
+  }
+  
+  .features-items article {
+    width: 38%;
+    text-align: center;
+  }
+  
+  .features h2 {
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+  
+  article .fontawesome-icon {
+    padding: 20px 20px;
+    margin: 0;
+  } 
+
+  article .features-item-description {
+    padding: 0 0 10px 0;
+    margin: 0;
+  }
+
+  
+/* ===========   REVIEWS STYLES FOR TABLET  =========== */
+
+  
+  .reviews {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a423a;
+  }
+
+  .reviews article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 80px;
+  }
+
+  .reviews h2 {
+    padding-top: 80px;
+    width: 70%;
+  }
+
+  .photo {
+    flex: 0 1 50%;
+  }
+
+  .reviews-content {
+    flex: 1 0 45%;
+    padding: 20px;
+  }
+
+  .reviews-content p {
+    padding: 20px 0;
+  }
+
+/* ==========   FOOTER/CONTACT STYLES FOR TABLET  ========== */
+
+  .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202322;
+    padding: 80px 0;
+  }
+
+  .footer-content h4 {
+    font-size: 1.4rem;
+  }
+
+  footer .content-wrapper {
+    width: 63%;
+  }
+
+  footer h4 {
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+  }
+
+  footer .contact {
+    padding: 0;
+  }
+
+  footer .social {
+    padding: 0;
+    text-align: center;
+    width: 49%;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social a img {
+    padding: 5px 15px;
+  }
+
+
+  /* ==========   ABOUT PAGE STYLES FOR TABLET   =========== */
+
+  
+  .mission .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
+  }
+
+  .mission .content-wrapper, .about-contact .content-wrapper {
+    padding: 80px 0 80px 0;
+  }
+  
+  .mission h2 {
+    width: 95%;
+    padding-bottom: 35px;
+  }
+
+  .mission p {
+    width: 45%;
+    padding: 0;
+  }
+  
+  .about-contact .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
+    border: 1px solid sandybrown;
+  }
+  
+  .gen-info, .chat-facilitator {
+    padding: 5px 0;
+    width: 49%;
+     border: 1px dotted darkcyan;
+  }
+
+  .chat-facilitator {
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+
+  .about-contact h2 {
+    width: 85%;
+    padding-bottom: 35px;
+  }
+
+  /* ==========   FAQ STYLES FOR TABLET   ========== */
+
+  .faq {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0 100px 0; 
+  }
+  
+  .faq-content {
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: 46%;
+  }
+
+  .faq h2 {
+    padding-bottom: 35px;
+  }
+
+  .faq-content h4 {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+  }
+
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* Deskttop Styles here */
 }
+
+
 
 /* ==========================================================================
    Print styles.
