@@ -358,7 +358,7 @@ article .fontawesome-icon, article .features-item-description {
   padding-top: 25px;
   padding-bottom: 40px;
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 
@@ -538,7 +538,7 @@ article .fontawesome-icon, article .features-item-description {
 
   header .content-wrapper {
     display: flex;
-    width: 83%;
+    width: 89%;
   }
 
   .logo-wrapper {
@@ -800,8 +800,171 @@ article .fontawesome-icon, article .features-item-description {
 
 }
 
+
 @media only screen and (min-width: 1200px) {
   /* Deskttop Styles here */
+
+  body, html {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  /* ========== HEADER STYLES FOR DESKTOP   =========== */
+
+  header .content-wrapper {
+    display: flex;
+    width: 75%;
+  }
+
+
+  /* ==========   HERO AREA - DESKTOP  ========== */
+
+
+  .hero-area {
+  justify-content: space-evenly;
+  }
+
+  .hero-head {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .hero-head h1 {
+    width: 75%;
+  }
+
+
+  /* ===========   FORM STYLES - DESKTOP  =========== */
+
+  aside {
+    display: flex;
+    justify-content: center;
+  }
+
+  aside .content-wrapper {
+    width: 70%;
+  }
+  
+  .form-description, .form {
+    width: 35%;
+  }
+
+
+
+   /* ===========   FEATURES STYLES - DESKTOP  =========== */
+
+
+  .features .content-wrapper {
+    width: 73%;
+    margin-bottom: 70px;
+  }
+
+  .features-items {
+    width: 95%;
+  }
+  
+  .features-items article {
+    width: 26%;
+    padding: 25px 0;
+  }
+  
+  .features h2 {
+    padding-bottom: 70px;
+    width: 100%;
+  }
+
+  article .features-item-description {
+    padding: 0 10px;
+  }
+
+
+  
+/* ===========   REVIEWS STYLES FOR DESKTOP  =========== */
+
+  
+  /* .reviews {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a423a;
+  } */
+
+  
+
+  .reviews .content-wrapper {
+    width: 77%;
+
+  }
+
+  .reviews h2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+  }
+
+  .photo {
+    flex: 0 1 50%;
+  }
+
+  .reviews-content {
+    flex: 1 0 45%;
+    padding: 20px;
+    padding-left: 30px;
+  }
+
+
+/* ==========   FOOTER/CONTACT STYLES FOR DESKTOP  ========== */
+
+
+  .footer-content {
+    width: 100%;
+  }
+
+  footer .content-wrapper {
+    width: 70%;
+  } 
+
+  footer .social {
+    width: 24%;
+  }
+
+
+  /* ==========   ABOUT PAGE STYLES FOR DESKTOP   =========== */
+
+  
+  .mission-content {
+    width: 80%;
+    padding-bottom: 50px;
+  }
+
+  .mission h2 {
+    width: 72%;
+  }
+ 
+
+  .chat-facilitator {
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+
+  .contact-section h2 {
+    width: 100%;
+  }
+
+  /* ==========   FAQ STYLES FOR DESKTOP   ========== */
+
+
+  .faq .content-wrapper {
+    width: 80%;
+  }
+
 }
 
 
