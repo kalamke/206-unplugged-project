@@ -100,10 +100,14 @@ textarea {
 
    /* ======   FONT STYLES and SIZES   ====== */
 
-body, html {
+html {
+  font-size: 16px;
+}
+
+   body {
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 h1, h2, .form input, h3, h4 {
@@ -113,29 +117,30 @@ h1, h2, .form input, h3, h4 {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   font-weight: normal;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.88;
   font-weight: normal;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.12rem;
   font-weight: normal;
 }
 
+
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: normal;
 }
 
 p {
+  font-size: .9rem;
   margin: 0;
 }
-
 
 
     /* ====== HEADER/NAV  STYLES - MOBILE  ====== */
@@ -181,7 +186,7 @@ li {
 ul li a {
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: bold;
 }
@@ -203,7 +208,6 @@ footer .content-wrapper {
 
 footer h4 {
   padding-bottom: 10px;
-  font-size: 1.2rem;
 }
 
 footer .contact {
@@ -232,6 +236,7 @@ footer .social-icons {
 
 footer .copyright {
   padding: 15px 0;
+  font-size: 1rem;
 }
 
 /* =====   HER0 AREA STYLES - MOBILE   ====== */
@@ -257,13 +262,12 @@ aside .content-wrapper {
   width: 90%;
 }
 
-aside h2 {
+aside h3 {
   padding-bottom: 15px;
   line-height: 2rem;
 }
 
 .form-description, .form {
-  font-size: 1.2rem;
   padding: 20px 15px;
 }
 
@@ -313,7 +317,6 @@ aside h2 {
 .features-items article {
   width: 55%;
   text-align: center;
-  font-size: .9rem;
 }
 
 .features h2 {
@@ -357,7 +360,6 @@ article .fontawesome-icon, article .features-item-description {
 .reviews-content p {
   padding-top: 25px;
   padding-bottom: 40px;
-  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -523,16 +525,23 @@ article .fontawesome-icon, article .features-item-description {
 @media only screen and (min-width: 768px) {
   /* Tablet Styles here */
 
-  body, html {
-    font-size: 16px;
-  }
+    /* ===== General Styles - TABLET   ===== */
 
   h1 {
     font-size: 3rem;
   }
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
   }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.75;
+  }
+  
 
   /* ========== HEADER STYLES FOR TABLET   =========== */
 
@@ -557,6 +566,11 @@ article .fontawesome-icon, article .features-item-description {
     flex: 1 0 40%;
     justify-content: flex-end;
   }
+  
+  header nav ul li {
+    font-size: 1rem;
+  }
+
 
   /* =====   Don't need header-divider for tablet  ===== */
   .header-divider {   
@@ -593,9 +607,7 @@ article .fontawesome-icon, article .features-item-description {
     padding: 30px 10px;
     box-sizing: border-box;
   }
-  .form-description h2, .form h2 {
-    font-size: 1.7rem;
-  }
+
 
 
    /* ===========   FEATURES STYLES - TABLET  =========== */
@@ -689,9 +701,6 @@ article .fontawesome-icon, article .features-item-description {
     padding: 80px 0;
   }
 
-  .footer-content h4 {
-    font-size: 1.4rem;
-  }
 
   footer .content-wrapper {
     width: 63%;
@@ -699,7 +708,6 @@ article .fontawesome-icon, article .features-item-description {
 
   footer h4 {
     padding-bottom: 30px;
-    font-size: 1.2rem;
   }
 
   footer .contact {
@@ -794,7 +802,6 @@ article .fontawesome-icon, article .features-item-description {
   }
 
   .faq-content h4 {
-    font-size: 1.1rem;
     padding-bottom: 10px;
   }
 
@@ -803,16 +810,26 @@ article .fontawesome-icon, article .features-item-description {
 
 @media only screen and (min-width: 1200px) {
   /* Deskttop Styles here */
+   /* ===== General Styles - TABLET   ===== */
 
-  body, html {
-    font-size: 18px;
+   h1 {
+    font-size: 3.75rem;
   }
 
-  h1 {
-    font-size: 3.5rem;
-  }
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.88rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.13rem;
   }
 
   /* ========== HEADER STYLES FOR DESKTOP   =========== */
@@ -820,6 +837,10 @@ article .fontawesome-icon, article .features-item-description {
   header .content-wrapper {
     display: flex;
     width: 75%;
+  }
+
+  header nav ul li {
+    font-size: 1.13rem;
   }
 
 
@@ -888,19 +909,8 @@ article .fontawesome-icon, article .features-item-description {
 /* ===========   REVIEWS STYLES FOR DESKTOP  =========== */
 
   
-  /* .reviews {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #2a423a;
-  } */
-
-  
-
-  .reviews .content-wrapper {
+   .reviews .content-wrapper {
     width: 77%;
-
   }
 
   .reviews h2 {
@@ -935,6 +945,10 @@ article .fontawesome-icon, article .features-item-description {
     width: 24%;
   }
 
+  footer .copyright {
+    font-size: 1.31rem;
+  }
+
 
   /* ==========   ABOUT PAGE STYLES FOR DESKTOP   =========== */
 
@@ -946,8 +960,7 @@ article .fontawesome-icon, article .features-item-description {
 
   .mission h2 {
     width: 72%;
-  }
- 
+  } 
 
   .chat-facilitator {
     padding-left: 25px;
@@ -958,11 +971,16 @@ article .fontawesome-icon, article .features-item-description {
     width: 100%;
   }
 
+
   /* ==========   FAQ STYLES FOR DESKTOP   ========== */
 
 
   .faq .content-wrapper {
     width: 80%;
+  }
+
+  .faq .content-wrapper h2 {
+    width: 100%;
   }
 
 }
