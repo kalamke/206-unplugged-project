@@ -391,7 +391,7 @@ article .fontawesome-icon, article .features-item-description {
 .map figure {
     width: 100%;
     height: 0; 
-    padding-bottom: 75%; 
+    padding-bottom: 80%; /* 360/450 = 80% */ 
     overflow: hidden;
     position: relative;
 }
@@ -787,6 +787,10 @@ article .fontawesome-icon, article .features-item-description {
     width: 47%; /* 300/640 = 47%  */
     padding: 0;
   }
+
+  .map figure {
+    padding-bottom: 44%;  /*340/768 = 44% */
+  }
   
   .contact-section .content-wrapper {
     display: flex;
@@ -1019,6 +1023,10 @@ article .fontawesome-icon, article .features-item-description {
 
   .mission-content p {
     width: 46%;
+  }
+
+  .map figure {
+    padding-bottom: 37%;  /* 445/1200 = 37% */
   }
 
   .chat-facilitator {
