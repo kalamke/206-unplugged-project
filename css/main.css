@@ -314,12 +314,12 @@ aside h3 {
 }
 
 .features .content-wrapper {
-  width: 85%;
+  width: 85%;  /* 305/360 = 85%  */
   margin-bottom: 35px;
 }
 
 .features-items article {
-  width: 55%;
+  width: 66%;  /*  200/305= 66%  */
   text-align: center;
 }
 
@@ -327,14 +327,22 @@ aside h3 {
   padding: 40px 0;
 }
 
-article .fontawesome-icon, article .features-item-description {
-  padding: 20px 0;
+article .features-item-description {
+  padding: 40px 0 60px 0;
   margin: 0;
+  /* outline: dashed red; */
 }
 
-.fontawesome-icon img {
-  width: 40%;
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 0;
+        padding: 0;
+        /* outline: solid orange; */
 }
+
+/* .fontawesome-icon img {
+  width: 40%;
+} */
 
 
 /* ======   REVIEWS STYLES - MOBILE  ====== */
@@ -650,31 +658,27 @@ article .fontawesome-icon, article .features-item-description {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 85%;
-    margin-bottom: 80px;
+    width: 83%;   /*  635/768 = 83%  */
+    margin-bottom: 30px;
   }
 
   .features-items {
-    width: 83%;
+    width: 82%;  /*  520/635 = 82%  */
   }
   
   .features-items article {
-    width: 38%;
+    width: 37%;  /*  200/535 = 37%  */
     text-align: center;
   }
   
   .features h2 {
     padding-top: 90px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   
-  article .fontawesome-icon {
-    padding: 20px 20px;
-    margin: 0;
-  } 
 
   article .features-item-description {
-    padding: 0 0 10px 0;
+    padding: 30 0 50px 0;
     margin: 0;
   }
 
@@ -932,17 +936,20 @@ article .fontawesome-icon, article .features-item-description {
 
 
   .features .content-wrapper {
-    width: 73%;
+    width: 80%;  /*   960/1200 = 75%   */
     margin-bottom: 70px;
+    outline: solid orangered;
   }
 
   .features-items {
-    width: 95%;
+    width: 86%;  /*   830/960 = 86%   */
+    outline: dotted paleturquoise;
   }
   
   .features-items article {
-    width: 26%;
+    width: 40%;   /*  article + marg = 320 / 830 = 39%   */
     padding: 25px 0;
+    outline: dashed rgb(172, 21, 159);
   }
   
   .features h2 {
