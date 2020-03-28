@@ -196,13 +196,12 @@ ul li a {
 footer {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
   background-color: #202322;
 }
 
 footer .content-wrapper {
-  width: 55%;
+  width: 56%;  /* 200/360 = 56%  */
 }
 
 footer h4 {
@@ -228,13 +227,28 @@ footer .social {
 
 footer .social-icons {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
 }
 
-footer .social-icons img {
-  width: 25px;
+
+.social-icons i {
+  font-size: 1.13rem;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
+.social-icons .fa-facebook-f {
+  padding: 11px 15px;
+}
+
+.social-icons .fa-twitter {
+  padding: 10px;
+}
+
+.social-icons .fa-instagram {
+  padding: 11px;
 }
 
 footer .copyright p {
@@ -242,9 +256,11 @@ footer .copyright p {
   font-size: 1rem;
 }
 
+
 /* =====   HER0 AREA STYLES - MOBILE   ====== */
 
 /* don't understand why this has to be flex?. something to do with image? */
+
 .hero-area {
   display: flex;
   flex-flow: row wrap;
@@ -330,19 +346,14 @@ aside h3 {
 article .features-item-description {
   padding: 40px 0 60px 0;
   margin: 0;
-  /* outline: dashed red; */
 }
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 0;
-        padding: 0;
-        /* outline: solid orange; */
+  margin-bottom: 0;
+  padding: 0;
 }
 
-/* .fontawesome-icon img {
-  width: 40%;
-} */
 
 
 /* ======   REVIEWS STYLES - MOBILE  ====== */
@@ -438,7 +449,7 @@ article .features-item-description {
 }
 
 
-    /* =====   FLEX CONTAINER SET-UP FAQ PAGE   ===== */
+    /* =====   FAQ PAGE STYLES - MOBILE   ===== */
 
 
 .faq {
@@ -454,9 +465,6 @@ article .features-item-description {
   padding: 40px 0 20px 0; 
 }
 
-/* .faq h2 {
-  font-size: 1.88rem;
-} */
 
 .faq-content {
   padding: 17px 0;
@@ -466,7 +474,6 @@ article .features-item-description {
   font-size: 1.13rem;
   padding-bottom: 15px;
 }
-
 
 
 
@@ -581,7 +588,7 @@ article .features-item-description {
   }
   
 
-  /* ========== HEADER STYLES FOR TABLET   =========== */
+  /* ========== HEADER/FOOTER STYLES FOR TABLET   =========== */
 
   header .content-wrapper {
     width: 85%;  /* 650/768 = 85% */
@@ -604,6 +611,38 @@ article .features-item-description {
   
   header nav ul li {
     font-size: 1rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202322;
+    padding: 80px 0;
+  }
+
+  footer .content-wrapper {
+    width: 70%;  /* 530/768 = 70% (included margins) */
+  }
+
+  footer h4 {
+    padding-bottom: 30px;
+  }
+
+  footer .contact {
+    padding: 0;
+    flex-basis: 30%;  /* 150/490 = 30%  */
+  }
+
+  footer .social {
+    padding: 0;
+    text-align: center;
+    flex-basis: 50%;  /* 200/490 = 40%  (included margins)  */
+  }
+
+
+  .social a img {
+    padding: 5px 20px;
   }
 
 
@@ -724,46 +763,7 @@ article .features-item-description {
     padding: 20px 0;
   }
 
-/* ==========   FOOTER/CONTACT STYLES FOR TABLET  ========== */
 
-  .footer-content {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #202322;
-    padding: 80px 0;
-  }
-
-
-  footer .content-wrapper {
-    width: 63%;
-  }
-
-  footer h4 {
-    padding-bottom: 30px;
-  }
-
-  footer .contact {
-    padding: 0;
-  }
-
-  footer .social {
-    padding: 0;
-    text-align: center;
-    width: 49%;
-  }
-
-  .social-icons {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .social a img {
-    padding: 5px 15px;
-  }
 
 
   /* ==========   ABOUT PAGE STYLES FOR TABLET   =========== */
